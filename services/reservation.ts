@@ -5,7 +5,7 @@ import { Listing, Reservation } from "@prisma/client";
 import { db } from "@/lib/db";
 import { LISTINGS_BATCH } from "@/utils/constants";
 import { getCurrentUser } from "./user";
-import { stripe } from "@/lib/stripe";
+// import { stripe } from "@/lib/stripe";
 
 export const getReservations = async (args: Record<string, string>) => {
   try {
@@ -179,32 +179,33 @@ export const createPaymentSession = async ({
     throw new Error("Please log in to reserve!");
   }
 
-  const product = await stripe.products.create({
-    name: "Listing",
-    images: [listing.imageSrc],
-    default_price_data: {
-      currency: "USD",
-      unit_amount: totalPrice * 100
-    }
-  })
+  // const product = await stripe.products.create({
+  //   name: "Listing",
+  //   images: [listing.imageSrc],
+  //   default_price_data: {
+  //     currency: "USD",
+  //     unit_amount: totalPrice * 100
+  //   }
+  // })
 
-  const stripeSession = await stripe.checkout.sessions.create({
-    success_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/trips`,
-    cancel_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/listings/${listing.id}`,
-    payment_method_types: ['card'],
-    mode: 'payment',
-    shipping_address_collection: {
-      allowed_countries: ["DE", "US", "NP", "CH", "BH", "AU"],
-    },
-    metadata: {
-      listingId,
-      startDate: String(startDate),
-      endDate: String(endDate),
-      totalPrice,
-      userId: user.id
-    },
-    line_items: [{ price: product.default_price as string, quantity: 1 }],
-  });
+  // const stripeSession = await stripe.checkout.sessions.create({
+  //   success_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/trips`,
+  //   cancel_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/listings/${listing.id}`,
+  //   payment_method_types: ['card'],
+  //   mode: 'payment',
+  //   shipping_address_collection: {
+  //     allowed_countries: ["DE", "US", "NP", "CH", "BH", "AU"],
+  //   },
+  //   metadata: {
+  //     listingId,
+  //     startDate: String(startDate),
+  //     endDate: String(endDate),
+  //     totalPrice,
+  //     userId: user.id
+  //   },
+  //   line_items: [{ price: product.default_price as string, quantity: 1 }],
+  // });
 
-  return {url: stripeSession.url}
+  // return {url: stripeSession.url}
+  return { url: null };
 }
