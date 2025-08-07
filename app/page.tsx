@@ -6,6 +6,7 @@ import EmptyState from "@/components/EmptyState";
 
 import { getListings } from "@/services/listing";
 import { getFavorites } from "@/services/favorite";
+import Categories from "@/components/navbar/Categories";
 
 export const dynamic = "force-dynamic";
 
@@ -27,29 +28,45 @@ const Home: FC<HomeProps> = async ({ searchParams }) => {
   }
 
   return (
-    <section className=" main-container pt-16 grid  grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
-      {listings.map((listing) => {
-        const hasFavorited = favorites.includes(listing.id);
-        return (
-          <ListingCard
-            key={listing.id}
-            data={listing}
-            hasFavorited={hasFavorited}
-          />
-        );
-      })}
-      {nextCursor ? (
-        <Suspense fallback={<></>}>
-          <LoadMore
-            nextCursor={nextCursor}
-            fnArgs={searchParams}
-            queryFn={getListings}
-            queryKey={["listings", searchParams]}
-            favorites={favorites}
-          />
-        </Suspense>
-      ) : null}
-    </section>
+    <>
+      <Categories />
+      <section className="main-container mt-[2rem] py-8">
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center justify-between">
+            <h1 className="text-2xl font-semibold text-gray-900">
+              All Apartments
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+            {listings.map((listing) => {
+              const hasFavorited = favorites.includes(listing.id);
+              return (
+                <ListingCard
+                  key={listing.id}
+                  data={listing}
+                  hasFavorited={hasFavorited}
+                />
+              );
+            })}
+          </div>
+
+          {nextCursor && (
+            <div className="flex justify-center mt-8">
+              <Suspense fallback={<div className="animate-pulse">Loading more...</div>}>
+                <LoadMore
+                  nextCursor={nextCursor}
+                  fnArgs={searchParams}
+                  queryFn={getListings}
+                  queryKey={["listings", searchParams]}
+                  favorites={favorites}
+                />
+              </Suspense>
+            </div>
+          )}
+        </div>
+      </section>
+    </>
   );
 };
 

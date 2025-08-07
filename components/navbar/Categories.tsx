@@ -1,62 +1,44 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import throttle from "lodash.throttle";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import CategoryBox from "./CategoryBox";
-import { categories } from "@/utils/constants";
-import { Category } from "@/types";
-
-const Categories = () => {
-  const [isActive, setIsActive] = useState(false);
-  const params = useSearchParams();
-  const pathname = usePathname();
-  const category = params?.get("category");
-
-  const isMainPage = pathname === "/";
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsActive(true);
-      } else {
-        setIsActive(false);
-      }
-    };
-
-    const throttledHandleScroll = throttle(handleScroll, 150);
-    window.addEventListener("scroll", throttledHandleScroll);
-
-    return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, []);
-
-  if (!isMainPage) {
-    return null;
-  }
+const ImageCarousel = () => {
+  // Test images array
+  const testImages = [
+    "https://picsum.photos/800/600?random=1",
+    "https://picsum.photos/800/600?random=2",
+    "https://picsum.photos/800/600?random=3",
+    "https://picsum.photos/800/600?random=4",
+    "https://picsum.photos/800/600?random=5",
+    "https://picsum.photos/800/600?random=6",
+    "https://picsum.photos/800/600?random=7",
+  ];
 
   return (
-    <div
-      className={` ${
-        isActive ? "shadow-md shadow-[rgba(0,0,0,.045)]" : ""
-      } transition-all duration-150`}
-    >
+    <div className="w-full max-w-[74rem] mx-auto">
       <Swiper
-        slidesPerView="auto"
+        modules={[Navigation, Pagination]}
+        slidesPerView={1}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
-        className="main-container mt-2 lg:!px-3 !px-2"
+        loop={true}
+        className="rounded-lg shadow-lg"
       >
-        {categories.map((item: Category) => (
-          <SwiperSlide className="max-w-fit" key={item.label}>
-            <CategoryBox
-              label={item.label}
-              icon={item.icon}
-              selected={category === item.label}
-            />
+        {testImages.map((imageUrl, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative w-full h-96">
+              <img
+                src={imageUrl}
+                alt={`Test image ${index + 1}`}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -64,4 +46,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default ImageCarousel;

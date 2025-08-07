@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  /* Hide scrollbar for webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .no-scroll {
@@ -51,27 +58,12 @@ body {
   font-size: 16px !important;
 }
 
-
-::-webkit-scrollbar {
-  @apply w-2;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-[#1295ff] transition-all duration-300 rounded-[25px];
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-[#1295ff];
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-[#f0f0f0] rounded-[25px];
-}
-
-::-webkit-scrollbar-corner {
-  @apply rounded-[25px];
+/* Scrollbar styles are now disabled, but keeping the hide-scrollbar utility class */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  width: 0;
+  display: none; /* Chrome, Safari, Opera */
 }
