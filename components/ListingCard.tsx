@@ -34,9 +34,14 @@ const ListingCard: React.FC<ListingCardProps> = ({
     reservationDate = `${format(start, "PP")} - ${format(end, "PP")}`;
   }
 
+  // Create Google Maps URL with the property location
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${data.title}, ${data.region}, ${data.country}`
+  )}`;
+
   return (
     <div className="relative">
-      <div className="absolute top-0 left-0 p-3 flex items-center justify-between w-full">
+      <div className="absolute top-0 left-0 p-3 flex items-center justify-between w-full z-10">
         <div className="z-5">
           <ListingMenu id={reservation?.id || data.id} />
         </div>
@@ -49,8 +54,9 @@ const ListingCard: React.FC<ListingCardProps> = ({
           />
         </div>
       </div>
-      <Link href={`/listings/${data.id}`} className="col-span-1 cursor-pointer">
-        <div className="flex flex-col gap-1 w-full">
+      
+      <div className="flex flex-col gap-1 w-full">
+        <Link href={`/listings/${data.id}`} className="cursor-pointer">
           <div className=" overflow-hidden md:rounded-xl rounded-md">
             <div className="aspect-[1/0.95] relative bg-gray-100">
               <Image
@@ -63,21 +69,55 @@ const ListingCard: React.FC<ListingCardProps> = ({
               />
             </div>
           </div>
-          <span className="font-semibold text-[16px] mt-[4px]">
+        </Link>
+
+        <Link href={`/listings/${data.id}`} className="cursor-pointer">
+          <span className="font-semibold text-[16px] mt-[4px] hover:text-gray-700 transition-colors">
             {data?.region}, {data?.country}
           </span>
-          <span className="font-light text-neutral-500 text-sm">
-            {reservationDate || data.category}
-          </span>
+        </Link>
 
-          <div className="flex flex-row items-baseline gap-1">
-            <span className="font-bold text-[#444] text-[14px]">
-              $ {formatPrice(price)}
-            </span>
-            {!reservation && <span className="font-light">night</span>}
-          </div>
+        <span className="font-light text-neutral-500 text-sm">
+          {reservationDate || data.category}
+        </span>
+
+        <div className="flex flex-row items-baseline gap-1 mb-3">
+          <span className="font-bold text-[#444] text-[14px]">
+            $ {formatPrice(price)}
+          </span>
+          {!reservation && <span className="font-light">night</span>}
         </div>
-      </Link>
+
+        <a 
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full"
+        >
+          <button className="w-full py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+            <svg 
+              className="w-4 h-4" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" 
+              />
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" 
+              />
+            </svg>
+            View on Maps
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
@@ -86,7 +126,7 @@ export default ListingCard;
 
 export const ListingSkeleton = () => {
   return (
-    <div className="col-span-1 ">
+    <div className="col-span-1">
       <div className="flex flex-col gap-1 w-full">
         <Skeleton
           width={"100%"}
@@ -101,6 +141,9 @@ export const ListingSkeleton = () => {
         </div>
         <Skeleton height={"16px"} width={"102px"} />
         <Skeleton height={"18px"} width={"132px"} />
+        
+        {/* Skeleton for the button */}
+        <Skeleton height={"40px"} width={"100%"} borderRadius={"8px"} className="mt-2" />
       </div>
     </div>
   );
