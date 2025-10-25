@@ -28,15 +28,15 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <Modal>
-          <Modal.Trigger name={user ? "share" : "Login"}>
+          {/* <Modal.Trigger name={user ? "share" : "Login"}>
             <button
               type="button"
               className="hidden md:block text-sm font-bold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer text-[#585858]"
             >
               Share your home
             </button>
-          </Modal.Trigger>
-          <Menu>
+          </Modal.Trigger> */}
+          {/* <Menu>
             <Menu.Toggle id="user-menu">
               <button
                 type="button"
@@ -86,7 +86,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
           </Modal.Window>
           <Modal.Window name="share">
             <RentModal />
-          </Modal.Window>
+          </Modal.Window> */}
         </Modal>
       </div>
     </div>

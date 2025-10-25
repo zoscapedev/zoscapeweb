@@ -6,7 +6,6 @@ import EmptyState from "@/components/EmptyState";
 
 import { getListings } from "@/services/listing";
 import { getFavorites } from "@/services/favorite";
-import Categories from "@/components/navbar/Categories";
 
 export const dynamic = "force-dynamic";
 
@@ -29,8 +28,7 @@ const Home: FC<HomeProps> = async ({ searchParams }) => {
 
   return (
     <>
-      <Categories />
-      <section className="main-container mt-[2rem] py-8">
+      <section className="main-container">
         <div className="flex flex-col gap-6">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-semibold text-gray-900">

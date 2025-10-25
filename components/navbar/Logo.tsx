@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="h-[50px] w-[180px] relative hidden md:block ">
+    <Link href="/" className="h-[50px] w-[180px] relative hidden md:block ml-[32rem]">
       <Image
         src="/images/zoscape.png"
         alt="logo"
