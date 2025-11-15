@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StayEase - Find Your Perfect Stay",
+  title: "Zoscape - Find Your Perfect Stay",
   description: "Discover and book amazing places to stay",
 };
 

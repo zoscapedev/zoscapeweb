@@ -1,289 +1,289 @@
 import { Listing, ListingDetail } from "../types";
 
 export const listings: Listing[] = [
-  {
-    id: "1",
-    title: "Cozy Beachfront Villa",
-    type: "Entire villa",
-    guests: 6,
-    bedrooms: 3,
-    bathrooms: 2,
-    price: 2499,
-    rating: 4.8,
-    reviews: 124,
-    image: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
-    location: "Goa, India"
-  },
-  {
-    id: "2",
-    title: "Modern Downtown Apartment",
-    type: "Entire apartment",
-    guests: 4,
-    bedrooms: 2,
-    bathrooms: 1,
-    price: 2499,
-    rating: 4.9,
-    reviews: 89,
-    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
-    location: "Mumbai, India"
-  },
-  {
-    id: "3",
-    title: "Luxury Mountain Retreat",
-    type: "Entire house",
-    guests: 8,
-    bedrooms: 4,
-    bathrooms: 3,
-    price: 2499,
-    rating: 5.0,
-    reviews: 67,
-    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-    location: "Manali, India"
-  },
-  {
-    id: "4",
-    title: "Charming Heritage Home",
-    type: "Entire home",
-    guests: 5,
-    bedrooms: 3,
-    bathrooms: 2,
-    price: 2499,
-    rating: 4.7,
-    reviews: 156,
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-    location: "Jaipur, India"
-  },
-  {
-    id: "5",
-    title: "Tropical Garden Bungalow",
-    type: "Entire bungalow",
-    guests: 4,
-    bedrooms: 2,
-    bathrooms: 2,
-    price: 2499,
-    rating: 4.9,
-    reviews: 201,
-    image: "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?w=800&q=80",
-    location: "Kerala, India"
-  },
-  {
-    id: "6",
-    title: "Riverside Cottage",
-    type: "Entire cottage",
-    guests: 3,
-    bedrooms: 1,
-    bathrooms: 1,
-    price: 2499,
-    rating: 4.6,
-    reviews: 78,
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-    location: "Rishikesh, India"
-  }
+    {
+      id: "8",
+      title: "Zoscape 509 - Airport Entire Private 1BHK",
+      type: "Entire apartment",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.7,
+      reviews: 83,
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "7",
+      title: "Zoscape 504 - Airport Entire Private 1BHK",
+      type: "Entire apartment",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.67,
+      reviews: 97,
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "9",
+      title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
+      type: "Entire rental unit",
+      guests: 3,
+      bedrooms: 2,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.88,
+      reviews: 82,
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "10",
+      title: "Zoscape 203 - Airport Entire Private 1 BHK",
+      type: "Entire rental unit",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.9,
+      reviews: 30,
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "11",
+      title: "Zoscape - Entire Private 1 BHK Studio",
+      type: "Entire rental unit",
+      guests: 3,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.5,
+      reviews: 0,
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      location: "Nagpur, India"
+    },
 ];
 
 export const listingDetails: { [key: string]: ListingDetail } = {
-  "1": {
-    ...listings[0],
-    description: "Experience the perfect beach getaway in this stunning beachfront villa. Wake up to the sound of waves and enjoy breathtaking ocean views from every room. This spacious property features modern amenities, a private pool, and direct beach access.",
-    amenities: [
-      "Wifi",
-      "Kitchen",
-      "Free parking",
-      "Pool",
-      "Air conditioning",
-      "Beach access",
-      "Outdoor dining area",
-      "BBQ grill",
-      "Ocean view",
-      "TV with streaming services"
-    ],
-    host: {
-      name: "Rajesh Kumar",
-      joinedDate: "January 2020",
-      isSuperhost: true
+    "8": {
+      id: "8",
+      title: "Zoscape 509 - Airport Entire Private 1BHK",
+      type: "Entire apartment",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.7,
+      reviews: 83,
+      location: "Nagpur, India",
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      description: `Welcome to Zoscape’s entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      amenities: [
+        "Lift",
+        "Western washroom",
+        "AC",
+        "Water filter",
+        "Gas stove",
+        "Fridge",
+        "Power backup",
+        "Balcony",
+        "Metro nearby",
+        "Peaceful area"
+      ],
+      host: {
+        name: "Srushtii",
+        joinedDate: "November 2023",
+        isSuperhost: true
+      },
+      images: [
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+      ],
+      checkIn: "2:00 PM",
+      checkOut: "11:00 AM",
+      houseRules: [
+        "All guests should be 18+",
+        "Guest IDs required before check-in",
+        "No parties",
+        "No smoking"
+      ]
     },
-    images: [
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80"
-    ],
-    checkIn: "3:00 PM",
-    checkOut: "11:00 AM",
-    houseRules: [
-      "No smoking",
-      "No pets",
-      "No parties or events",
-      "Quiet hours after 10 PM"
-    ]
-  },
-  "2": {
-    ...listings[1],
-    description: "Modern and stylish apartment in the heart of downtown Mumbai. Perfect for business travelers or couples exploring the city. Walking distance to major attractions, restaurants, and shopping centers.",
-    amenities: [
-      "Wifi",
-      "Kitchen",
-      "Elevator",
-      "Air conditioning",
-      "Washer",
-      "Workspace",
-      "TV with cable",
-      "City view",
-      "24/7 security",
-      "Gym access"
-    ],
-    host: {
-      name: "Priya Sharma",
-      joinedDate: "March 2019",
-      isSuperhost: true
+    "7": {
+      id: "7",
+      title: "Zoscape 504 - Airport Entire Private 1BHK",
+      type: "Entire apartment",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.67,
+      reviews: 97,
+      location: "Nagpur, India",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      description: `Welcome to Zoscape’s entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      amenities: [
+        "Lift",
+        "Western washroom",
+        "Water filter",
+        "Gas stove",
+        "Fridge",
+        "Power backup",
+        "Balcony",
+        "Metro nearby",
+        "Peaceful area"
+      ],
+      host: {
+        name: "Srushtii",
+        joinedDate: "November 2023",
+        isSuperhost: true
+      },
+      images: [
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+      ],
+      checkIn: "2:00 PM",
+      checkOut: "11:00 AM",
+      houseRules: [
+        "All guests should be 18+",
+        "Guest IDs required before check-in",
+        "No parties",
+        "No smoking"
+      ]
     },
-    images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80"
-    ],
-    checkIn: "2:00 PM",
-    checkOut: "12:00 PM",
-    houseRules: [
-      "No smoking",
-      "No pets",
-      "No parties",
-      "Keep common areas clean"
-    ]
-  },
-  "3": {
-    ...listings[2],
-    description: "Escape to this luxurious mountain retreat surrounded by snow-capped peaks and pine forests. Perfect for families and groups seeking adventure and relaxation. Features include a fireplace, mountain views, and proximity to hiking trails.",
-    amenities: [
-      "Wifi",
-      "Full kitchen",
-      "Free parking",
-      "Fireplace",
-      "Heating",
-      "Mountain view",
-      "Balcony",
-      "Hot tub",
-      "Board games",
-      "Netflix"
-    ],
-    host: {
-      name: "Amit Verma",
-      joinedDate: "June 2018",
-      isSuperhost: false
+    "11": {
+      id: "11",
+      title: "Zoscape - Entire Private 1 BHK Studio",
+      type: "Entire rental unit",
+      guests: 3,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.5,
+      reviews: 0,
+      location: "Nagpur, India",
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      description: `Welcome to 1BHK Private Studio Apartment in East Nagpur is located Nearby from the Nagpur international airport and Nagpur Railway Station.\nYou will find all the necessities nearby as the metro station (Vaishnodevi Chowk metro) is 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like western washroom, water filter, gas stove, fridge, AC. Though the property is old we maintained it quite well.\n\nOther things to note\nSelf check-in with the lockbox. Furry friends welcome.`,
+      amenities: [
+        "Kitchen",
+        "Free on-street parking",
+        "TV",
+        "Private patio or balcony",
+        "Carbon monoxide alarm",
+        "Wifi",
+        "Pets allowed",
+        "Air conditioning",
+        "Exterior security cameras on property",
+        "Smoke alarm"
+      ],
+      host: {
+        name: "Sakshi",
+        joinedDate: "June 2025",
+        isSuperhost: false
+      },
+      images: [
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80"
+      ],
+      checkIn: "2:00 PM",
+      checkOut: "11:00 AM",
+      houseRules: [
+        "Self check-in with the lockbox",
+        "Furry friends welcome",
+        "No parties",
+        "No smoking"
+      ]
     },
-    images: [
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
-    ],
-    checkIn: "4:00 PM",
-    checkOut: "10:00 AM",
-    houseRules: [
-      "No smoking inside",
-      "Pets allowed with prior approval",
-      "No loud music after 9 PM",
-      "Please respect the neighbors"
-    ]
-  },
-  "4": {
-    ...listings[3],
-    description: "Step back in time in this beautifully restored heritage home in the Pink City. Traditional Rajasthani architecture meets modern comfort. Close to major tourist attractions and local markets.",
-    amenities: [
-      "Wifi",
-      "Kitchen",
-      "Free parking",
-      "Air conditioning",
-      "Traditional decor",
-      "Courtyard",
-      "Rooftop terrace",
-      "Heritage architecture",
-      "Local artwork",
-      "Tea/coffee maker"
-    ],
-    host: {
-      name: "Vikram Singh",
-      joinedDate: "September 2017",
-      isSuperhost: true
+    "9": {
+      id: "9",
+      title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
+      type: "Entire rental unit",
+      guests: 3,
+      bedrooms: 2,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.88,
+      reviews: 82,
+      location: "Nagpur, India",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      description: `Welcome to Zoscape’s entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      amenities: [
+        "Lift",
+        "Western washroom",
+        "Water filter",
+        "Gas stove",
+        "Fridge",
+        "Power backup for society",
+        "Metro nearby",
+        "Peaceful area"
+      ],
+      host: {
+        name: "Srushtii",
+        joinedDate: "November 2023",
+        isSuperhost: true
+      },
+      images: [
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+      ],
+      checkIn: "2:00 PM",
+      checkOut: "11:00 AM",
+      houseRules: [
+        "All guests should be 18+",
+        "Guest IDs required before check-in",
+        "No parties",
+        "No smoking"
+      ]
     },
-    images: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-    ],
-    checkIn: "1:00 PM",
-    checkOut: "11:00 AM",
-    houseRules: [
-      "No smoking",
-      "No pets",
-      "Respect cultural artifacts",
-      "Remove shoes inside"
-    ]
-  },
-  "5": {
-    ...listings[4],
-    description: "Immerse yourself in nature at this peaceful garden bungalow surrounded by tropical plants and palm trees. Perfect for a romantic getaway or quiet retreat. Listen to birds chirping and enjoy Kerala's natural beauty.",
-    amenities: [
-      "Wifi",
-      "Kitchen",
-      "Free parking",
-      "Garden",
-      "Air conditioning",
-      "Outdoor seating",
-      "Nature view",
-      "Hammock",
-      "Bicycle",
-      "Local spices tour"
-    ],
-    host: {
-      name: "Lakshmi Menon",
-      joinedDate: "February 2021",
-      isSuperhost: false
-    },
-    images: [
-      "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?w=800&q=80",
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
-    ],
-    checkIn: "3:00 PM",
-    checkOut: "11:00 AM",
-    houseRules: [
-      "No smoking",
-      "No pets",
-      "Preserve the garden",
-      "Quiet hours after 10 PM"
-    ]
-  },
-  "6": {
-    ...listings[5],
-    description: "Cozy riverside cottage perfect for yoga enthusiasts and nature lovers. Located near the Ganges, offering peaceful views and proximity to yoga centers and adventure activities like rafting.",
-    amenities: [
-      "Wifi",
-      "Kitchenette",
-      "River view",
-      "Meditation space",
-      "Fan",
-      "Balcony",
-      "Yoga mat",
-      "Books",
-      "Hot water",
-      "Peaceful location"
-    ],
-    host: {
-      name: "Arjun Patel",
-      joinedDate: "May 2019",
-      isSuperhost: true
-    },
-    images: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=800&q=80",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80"
-    ],
-    checkIn: "2:00 PM",
-    checkOut: "12:00 PM",
-    houseRules: [
-      "No smoking",
-      "No pets",
-      "No alcohol",
-      "Maintain peaceful environment"
-    ]
-  }
+    "10": {
+      id: "10",
+      title: "Zoscape 203 - Airport Entire Private 1 BHK",
+      type: "Entire rental unit",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.9,
+      reviews: 30,
+      location: "Nagpur, India",
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      description: `Welcome to Zoscape’s entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      amenities: [
+        "Lift",
+        "Western washroom",
+        "Water filter",
+        "Gas stove",
+        "Fridge",
+        "Power backup for society",
+        "Metro nearby",
+        "Peaceful area"
+      ],
+      host: {
+        name: "Srushtii",
+        joinedDate: "November 2023",
+        isSuperhost: true
+      },
+      images: [
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+      ],
+      checkIn: "2:00 PM",
+      checkOut: "11:00 AM",
+      houseRules: [
+        "All guests should be 18+",
+        "Guest IDs required before check-in",
+        "No parties",
+        "No smoking"
+      ]
+    }
 };
