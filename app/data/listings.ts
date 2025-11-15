@@ -83,6 +83,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
       description: `Welcome to Zoscape’s entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
+        //sdfsd
         "Lift",
         "Western washroom",
         "AC",
