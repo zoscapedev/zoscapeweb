@@ -2,19 +2,6 @@ import { Listing, ListingDetail } from "../types";
 
 export const listings: Listing[] = [
     {
-      id: "8",
-      title: "Zoscape 509 - Airport Entire Private 1BHK",
-      type: "Entire apartment",
-      guests: 4,
-      bedrooms: 1,
-      bathrooms: 1,
-      price: 2499,
-      rating: 4.7,
-      reviews: 83,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-      location: "Nagpur, India"
-    },
-    {
       id: "7",
       title: "Zoscape 504 - Airport Entire Private 1BHK",
       type: "Entire apartment",
@@ -24,19 +11,6 @@ export const listings: Listing[] = [
       price: 2499,
       rating: 4.67,
       reviews: 97,
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-      location: "Nagpur, India"
-    },
-    {
-      id: "9",
-      title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
-      type: "Entire rental unit",
-      guests: 3,
-      bedrooms: 2,
-      bathrooms: 1,
-      price: 2499,
-      rating: 4.88,
-      reviews: 82,
       image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
       location: "Nagpur, India"
     },
@@ -51,6 +25,32 @@ export const listings: Listing[] = [
       rating: 4.9,
       reviews: 30,
       image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "8",
+      title: "Zoscape 509 - Airport Entire Private 1BHK",
+      type: "Entire apartment",
+      guests: 4,
+      bedrooms: 1,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.7,
+      reviews: 83,
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      location: "Nagpur, India"
+    },
+    {
+      id: "9",
+      title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
+      type: "Entire rental unit",
+      guests: 3,
+      bedrooms: 2,
+      bathrooms: 1,
+      price: 2499,
+      rating: 4.88,
+      reviews: 82,
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
       location: "Nagpur, India"
     },
     {

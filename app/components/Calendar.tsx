@@ -100,19 +100,19 @@ export default function Calendar() {
       {/* Date Display */}
       <div className="border border-gray-300 rounded-lg overflow-hidden">
         <div className="grid grid-cols-2">
-          <div className="border-r border-gray-300 p-3">
+          <div className="border-r border-gray-300 p-2 sm:p-3">
             <label className="block text-xs font-semibold text-black mb-1">
               CHECK-IN
             </label>
-            <div className="text-sm text-black">
+            <div className="text-xs sm:text-sm text-black">
               {checkIn ? checkIn.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Add date'}
             </div>
           </div>
-          <div className="p-3">
+          <div className="p-2 sm:p-3">
             <label className="block text-xs font-semibold text-black mb-1">
               CHECK-OUT
             </label>
-            <div className="text-sm text-black">
+            <div className="text-xs sm:text-sm text-black">
               {checkOut ? checkOut.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Add date'}
             </div>
           </div>
@@ -120,25 +120,25 @@ export default function Calendar() {
       </div>
 
       {/* Calendar */}
-      <div className="border border-gray-200 rounded-lg p-4">
-        <div className="text-center font-semibold mb-4 text-black">
+      <div className="border border-gray-200 rounded-lg p-2 sm:p-4">
+        <div className="text-center text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-black">
           {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
         </div>
-        
+
         {/* Weekday headers */}
-        <div className="grid grid-cols-7 gap-1 mb-2">
+        <div className="grid grid-cols-7 gap-0.5 sm:gap-1 mb-2">
           {['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map((day) => (
-            <div key={day} className="text-xs font-semibold text-gray-600 text-center p-2">
+            <div key={day} className="text-xs font-semibold text-gray-600 text-center p-1 sm:p-2">
               {day}
             </div>
           ))}
         </div>
-        
+
         {/* Calendar days */}
-        <div className="grid grid-cols-7 gap-1">
+        <div className="grid grid-cols-7 gap-0.5 sm:gap-1">
           {days.map((date, index) => {
             if (!date) {
-              return <div key={`empty-${index}`} className="p-2" />;
+              return <div key={`empty-${index}`} className="p-1 sm:p-2" />;
             }
             const isPast = date < today;
             const inRange = isDateInRange(date);
@@ -152,7 +152,7 @@ export default function Calendar() {
                 onMouseEnter={() => setHoverDate(date)}
                 onMouseLeave={() => setHoverDate(null)}
                 className={`
-                  p-2 text-sm relative
+                  p-1 sm:p-2 text-xs sm:text-sm relative min-h-[32px] sm:min-h-[36px]
                   ${isPast ? 'text-gray-300 cursor-not-allowed' : 'text-black cursor-pointer hover:border hover:border-black'}
                   ${inRange ? 'bg-gray-100' : ''}
                   ${isStart || isEnd ? 'bg-black text-white font-semibold rounded-full' : 'rounded-full'}
@@ -169,21 +169,21 @@ export default function Calendar() {
       {/* Preview or Price Breakdown */}
       {(nights > 0 || (selectingCheckOut && previewNights > 0)) && (
         <div className="space-y-3 pt-4 border-t border-gray-200">
-          <h4 className="font-semibold text-black">Price Details</h4>
+          <h4 className="text-sm sm:text-base font-semibold text-black">Price Details</h4>
 
           <div className="space-y-2">
-            <div className="flex justify-between text-black">
+            <div className="flex justify-between text-xs sm:text-sm text-black">
               <span>₹{PRICE_PER_NIGHT} × {nights || previewNights} {(nights || previewNights) === 1 ? 'night' : 'nights'}</span>
               <span>₹{(nights ? totalPrice : previewTotal).toLocaleString()}</span>
             </div>
             {nights > 0 && (
               <>
-                <div className="flex justify-between text-black">
+                <div className="flex justify-between text-xs sm:text-sm text-black">
                   <span>Service fee</span>
                   <span>₹{serviceFee.toLocaleString()}</span>
                 </div>
                 <div className="pt-3 border-t border-gray-200">
-                  <div className="flex justify-between font-bold text-black">
+                  <div className="flex justify-between text-sm sm:text-base font-bold text-black">
                     <span>Total (including GST)</span>
                     <span>₹{grandTotal.toLocaleString()}</span>
                   </div>
@@ -197,7 +197,7 @@ export default function Calendar() {
       {/* Info Message */}
       {nights === 0 && !selectingCheckOut && (
         <div className="pt-4">
-          <p className="text-sm text-black text-center">
+          <p className="text-xs sm:text-sm text-black text-center">
             Select dates to see pricing
           </p>
         </div>
