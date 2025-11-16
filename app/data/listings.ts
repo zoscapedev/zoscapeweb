@@ -2,7 +2,7 @@ import { Listing, ListingDetail } from "../types";
 
 export const listings: Listing[] = [
     {
-      id: "7",
+      id: "504",
       title: "Zoscape 504 - Airport Entire Private 1BHK",
       type: "Entire apartment",
       guests: 4,
@@ -15,7 +15,7 @@ export const listings: Listing[] = [
       location: "Nagpur, India"
     },
     {
-      id: "10",
+      id: "203",
       title: "Zoscape 203 - Airport Entire Private 1 BHK",
       type: "Entire rental unit",
       guests: 4,
@@ -28,7 +28,7 @@ export const listings: Listing[] = [
       location: "Nagpur, India"
     },
     {
-      id: "8",
+      id: "509",
       title: "Zoscape 509 - Airport Entire Private 1BHK",
       type: "Entire apartment",
       guests: 4,
@@ -41,7 +41,7 @@ export const listings: Listing[] = [
       location: "Nagpur, India"
     },
     {
-      id: "9",
+      id: "306",
       title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
       type: "Entire rental unit",
       guests: 3,
@@ -54,7 +54,7 @@ export const listings: Listing[] = [
       location: "Nagpur, India"
     },
     {
-      id: "11",
+      id: "101",
       title: "Zoscape - Entire Private 1 BHK Studio",
       type: "Entire rental unit",
       guests: 3,
@@ -69,8 +69,8 @@ export const listings: Listing[] = [
 ];
 
 export const listingDetails: { [key: string]: ListingDetail } = {
-    "8": {
-      id: "8",
+    "509": {
+      id: "509",
       title: "Zoscape 509 - Airport Entire Private 1BHK",
       type: "Entire apartment",
       guests: 4,
@@ -171,8 +171,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         "No smoking"
       ]
     },
-    "7": {
-      id: "7",
+    "504": {
+      id: "504",
       title: "Zoscape 504 - Airport Entire Private 1BHK",
       type: "Entire apartment",
       guests: 4,
@@ -216,8 +216,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         "No smoking"
       ]
     },
-    "11": {
-      id: "11",
+    "101": {
+      id: "101",
       title: "Zoscape - Entire Private 1 BHK Studio",
       type: "Entire rental unit",
       guests: 3,
@@ -262,8 +262,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         "No smoking"
       ]
     },
-    "9": {
-      id: "9",
+    "306": {
+      id: "306",
       title: "Zoscape 306 - Airport Entire Private 1.5 BHK",
       type: "Entire rental unit",
       guests: 3,
@@ -371,8 +371,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         "No smoking"
       ]
     },
-    "10": {
-      id: "10",
+    "203": {
+      id: "203",
       title: "Zoscape 203 - Airport Entire Private 1 BHK",
       type: "Entire rental unit",
       guests: 4,
