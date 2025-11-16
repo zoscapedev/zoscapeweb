@@ -81,7 +81,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       reviews: 83,
       location: "Nagpur, India",
       image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-      description: `Welcome to Zoscape’s entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      description: `Welcome to Zoscape's entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
         //sdfsd
         "Lift",
@@ -101,9 +101,66 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
+      ],
+      photoCategories: [
+        {
+          name: "Living room",
+          description: "Sofa bed · Air conditioning · Ceiling fan · Heating · TV",
+          images: [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Full kitchen",
+          description: "Fridge · Gas cooker · Cooking basics · Dishes and cutlery",
+          images: [
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Dining area",
+          description: "Dining table · Chairs",
+          images: [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Bedroom",
+          description: "1 queen bed · Bed linen · Extra pillows and blankets",
+          images: [
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Full bathroom",
+          description: "Shower · Hair dryer · Cleaning products · Shampoo",
+          images: [
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Exterior",
+          description: "Balcony · Building view",
+          images: [
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
+          ]
+        },
+        {
+          name: "Additional photos",
+          images: [
+            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80"
+          ]
+        }
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
@@ -144,9 +201,11 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
@@ -188,11 +247,11 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: false
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80"
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
@@ -232,9 +291,11 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
@@ -274,9 +335,11 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80"
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",

@@ -7,6 +7,9 @@ interface ListingCardProps {
 }
 
 export default function ListingCard({ listing }: ListingCardProps) {
+  const message = `Hello, I want to book a room ${listing.title} at Zoscape.`;
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/918459074850?text=${encodedMessage}`;
   return (
     <div className="group">
       <div className="space-y-3">
@@ -47,9 +50,15 @@ export default function ListingCard({ listing }: ListingCardProps) {
             >
               View on Maps
             </a>
-            <button className="flex-1 text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors" style={{ backgroundColor: '#1295ff' }}>
+            <a 
+              href={whatsappUrl}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex-1 text-center text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors" 
+              style={{ backgroundColor: '#1295ff' }}
+            >
               Contact
-            </button>
+            </a>
           </div>
         </div>
       </div>

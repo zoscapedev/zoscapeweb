@@ -12,6 +12,12 @@ export interface Listing {
   location: string;
 }
 
+export interface PhotoCategory {
+  name: string;
+  description?: string;
+  images: string[];
+}
+
 export interface ListingDetail extends Listing {
   description: string;
   amenities: string[];
@@ -21,6 +27,7 @@ export interface ListingDetail extends Listing {
     isSuperhost: boolean;
   };
   images: string[];
+  photoCategories?: PhotoCategory[];
   checkIn: string;
   checkOut: string;
   houseRules: string[];
