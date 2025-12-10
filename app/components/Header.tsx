@@ -11,7 +11,6 @@ export default function Header({ roomName }: HeaderProps) {
     <header className="border-b border-gray-200 sticky top-0 z-50 shadow-sm" style={{ backgroundColor: '#1295ff' }}>
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Spacer for centering logo */}
           <div className="hidden lg:block w-[200px]"></div>
 
           {/* Logo */}
