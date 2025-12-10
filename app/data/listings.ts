@@ -24,7 +24,7 @@ export const listings: Listing[] = [
       price: 2499,
       rating: 4.9,
       reviews: 30,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      image: "/203/hall/203_hall.jpg",
       location: "Nagpur, India"
     },
     {
@@ -475,8 +475,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.9,
       reviews: 30,
       location: "Nagpur, India",
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-      description: `Welcome to Zoscape’s entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      image: "/203/hall/203_hall(2).jpg",
+      description: `Welcome to Zoscape's entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
         "Lift",
         "Western washroom",
@@ -493,11 +493,66 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
-        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
+        "/203/hall/203_hall(2).jpg",
+        "/203/bedroom/203_bedroom.jpg",
+        "/203/kitchen/203_kitchen.jpeg",
+        "/203/bathroom/203_bathroom.jpeg",
+        "/203/bedroom/203_bedroom(5).jpg"
+      ],            
+      photoCategories: [
+        {
+          name: "Hall",
+          description: "Living room · Air conditioning · Ceiling fan · TV",
+          images: [
+            "/203/hall/203_hall.jpg",
+            "/203/hall/203_hall(1).jpg",
+            "/203/hall/203_hall(2).jpg",
+          ]
+        },
+        {
+          name: "Bedroom",
+          description: "1 queen bed · Bed linen · Extra pillows and blankets · AC",
+          images: [
+            "/203/bedroom/203_bedroom.jpg",
+            "/203/bedroom/203_bedroom(1).jpg",
+            "/203/bedroom/203_bedroom(2).jpg",
+            "/203/bedroom/203_bedroom(3).jpg",
+            "/203/bedroom/203_bedroom(4).jpg",
+            "/203/bedroom/203_bedroom(5).jpg"
+          ]
+        },
+        {
+          name: "Full kitchen",
+          description: "Fridge · Gas cooker · Cooking basics · Dishes and cutlery",
+          images: [
+            "/203/kitchen/203_kitchen.jpeg",
+            "/203/kitchen/203_kitchen(1).jpeg",
+            "/203/kitchen/203_kitchen(2).jpeg",
+            "/203/kitchen/203_kitchen.jpg",
+            "/203/kitchen/203_kitchen(1).jpg",
+            "/203/kitchen/203_kitchen(2).jpg",
+            "/203/kitchen/203_kitchen(3).jpg",
+            "/203/kitchen/203_kitchen(4).jpg",
+            "/203/kitchen/203_kitchen(5).jpg"
+          ]
+        },
+        {
+          name: "Dining area",
+          description: "Dining table · Chairs · Tables",
+          images: [
+            "/203/dining/203_dining.jpg",
+            "/203/dining/203_dining(1).jpg",
+            // "/203/dining/203_dining(2).jpg"
+          ]
+        },
+        {
+          name: "Full bathroom",
+          description: "Shower · Hair dryer · Cleaning products · Shampoo",
+          images: [
+            "/203/bathroom/203_bathroom.jpeg",
+            "/203/bathroom/203_bathroom(1).jpeg"
+          ]
+        }
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
