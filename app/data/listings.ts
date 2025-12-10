@@ -11,7 +11,7 @@ export const listings: Listing[] = [
       price: 2499,
       rating: 4.67,
       reviews: 97,
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UautONXginQqFolOd3kEUNnLsTVb0CBt9pK25rv",
       location: "Nagpur, India"
     },
     {
@@ -37,7 +37,7 @@ export const listings: Listing[] = [
       price: 2499,
       rating: 4.7,
       reviews: 83,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
       location: "Nagpur, India"
     },
     {
@@ -63,7 +63,7 @@ export const listings: Listing[] = [
       price: 2499,
       rating: 4.5,
       reviews: 0,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
       location: "Nagpur, India"
     },
 ];
@@ -80,10 +80,9 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.7,
       reviews: 83,
       location: "Nagpur, India",
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
       description: `Welcome to Zoscape's entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
-        //sdfsd
         "Lift",
         "Western washroom",
         "AC",
@@ -101,64 +100,60 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
-        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauUKSNOnXq1k3gCSlvm6AcE9Ws8VKzwHanjMQ7",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaujnYS49umfRd04WqDx6o3tkrJlQMpeSnX1yPu",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uauj8TgotmfRd04WqDx6o3tkrJlQMpeSnX1yPuG",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaubBHmWx5saErM2jNn1kKI6QfLvqJhz4W9ixwD"
       ],
       photoCategories: [
         {
-          name: "Living room",
-          description: "Sofa bed · Air conditioning · Ceiling fan · Heating · TV",
+          name: "Hall",
+          description: "Living room · Air conditioning · Ceiling fan · TV",
           images: [
-            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80"
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaubBHmWx5saErM2jNn1kKI6QfLvqJhz4W9ixwD",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauSm7Gidcsw3XviYlVyzpM6bUReTm9FHBtfjE5",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauDTzXlMRFm5Zdr1RSILwCqahNpiV6Ak0tzsXY",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvT2XaFm3b5ACYhf2UMxJlokwNicasu1SqF",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauwpT0gK0xWof0QTvMYylJKpNBCzjmtbwaFH89",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uaup3aLjBZLNQl42tF5yWEKegxSaTC6DJo9kvXs",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaupVbRU6ZLNQl42tF5yWEKegxSaTC6DJo9kvXs",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauTluVNdFp93tX5zQSfNrlYhR08gMaDk6pPdoj"
+          ]
+        },
+        {
+          name: "Bedroom",
+          description: "1 queen bed · Bed linen · Extra pillows and blankets · AC",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauUKSNOnXq1k3gCSlvm6AcE9Ws8VKzwHanjMQ7",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauIKzgyWSNpuWESzf2wcydRrAYtsKBFUDMmeZb",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uau2sE4r2215Y1AbfJen46Ip3Prucho9MNE7zTO",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaucjscEukP2OsWJ6Sh45Qq3dpxEbF9fIHuimoe",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaupVbRU6ZLNQl42tF5yWEKegxSaTC6DJo9kvXs"
           ]
         },
         {
           name: "Full kitchen",
           description: "Fridge · Gas cooker · Cooking basics · Dishes and cutlery",
           images: [
-            "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
-          ]
-        },
-        {
-          name: "Dining area",
-          description: "Dining table · Chairs",
-          images: [
-            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80"
-          ]
-        },
-        {
-          name: "Bedroom",
-          description: "1 queen bed · Bed linen · Extra pillows and blankets",
-          images: [
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-            "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80"
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaujnYS49umfRd04WqDx6o3tkrJlQMpeSnX1yPu",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uau96GdD4Cp4nwYzVroMih0O7UlfeSTjqGb5Ns3"
           ]
         },
         {
           name: "Full bathroom",
           description: "Shower · Hair dryer · Cleaning products · Shampoo",
           images: [
-            "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80"
-          ]
-        },
-        {
-          name: "Exterior",
-          description: "Balcony · Building view",
-          images: [
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uauj8TgotmfRd04WqDx6o3tkrJlQMpeSnX1yPuG",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uau9jL19anCp4nwYzVroMih0O7UlfeSTjqGb5Ns"
           ]
         },
         {
           name: "Additional photos",
           images: [
-            "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80"
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauJnzAd39D7rbs1cByLnQOzCluN5MGwqEdm8fF",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5Uaux6qvj6To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3"
           ]
         }
       ],
@@ -182,8 +177,8 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.67,
       reviews: 97,
       location: "Nagpur, India",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-      description: `Welcome to Zoscape’s entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauniTqv1DJYM2yUon847cpeRviFx9OHfZhKXSb",
+      description: `Welcome to Zoscape's entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
         "Lift",
         "Western washroom",
@@ -201,11 +196,60 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: true
       },
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
-        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauniTqv1DJYM2yUon847cpeRviFx9OHfZhKXSb",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UautONXginQqFolOd3kEUNnLsTVb0CBt9pK25rv",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauRzKeMpdtkBZlSTJAUimgwsEG2cx8XbVQMYaH",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauLtiKnNmjJNrPIGYgHRawZ5mQKlcCbxWTydX7",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaujuOcHimfRd04WqDx6o3tkrJlQMpeSnX1yPuG"
+      ],
+      photoCategories: [
+        {
+          name: "Hall",
+          description: "Living room · Air conditioning · Ceiling fan · TV",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UautONXginQqFolOd3kEUNnLsTVb0CBt9pK25rv",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaujuOcHimfRd04WqDx6o3tkrJlQMpeSnX1yPuG",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauJXfXy59D7rbs1cByLnQOzCluN5MGwqEdm8fF"
+          ]
+        },
+        {
+          name: "Bedroom",
+          description: "1 queen bed · Bed linen · Extra pillows and blankets · AC",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauniTqv1DJYM2yUon847cpeRviFx9OHfZhKXSb",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauFiGxvGVE3sNnTaqlYIjwg01PkW4xvdoMFC2O",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauCH0g5PLWmRZwPTtXEvFOo2bpuYIAV9idkJ6Q",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauCw5u88LWmRZwPTtXEvFOo2bpuYIAV9idkJ6Q",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauUVB3RteXq1k3gCSlvm6AcE9Ws8VKzwHanjMQ",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaukVHXSdNYLaJUQqM9WDICB84ZhrskpdoRKE1t"
+          ]
+        },
+        {
+          name: "Full kitchen",
+          description: "Fridge · Gas cooker · Cooking basics · Dishes and cutlery",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauRzKeMpdtkBZlSTJAUimgwsEG2cx8XbVQMYaH",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauihU18FrFVhTaSP9AtzxUY8JuqIWbX5m7rZB1",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxQLpf6To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaujkEPS8mfRd04WqDx6o3tkrJlQMpeSnX1yPuG"
+          ]
+        },
+        {
+          name: "Full bathroom",
+          description: "Shower · Hair dryer · Cleaning products · Shampoo",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauLtiKnNmjJNrPIGYgHRawZ5mQKlcCbxWTydX7",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauJGFHkc9D7rbs1cByLnQOzCluN5MGwqEdm8fF"
+          ]
+        },
+        {
+          name: "Dining area",
+          description: "Dining table · Chairs",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauC9jv5qLWmRZwPTtXEvFOo2bpuYIAV9idkJ6Q",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauYRWB33oWcSpPeXqk5IT9f8ngtyuRUE431l7i"
+          ]
+        }
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",
@@ -227,7 +271,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.5,
       reviews: 0,
       location: "Nagpur, India",
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
+      image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
       description: `Welcome to 1BHK Private Studio Apartment in East Nagpur is located Nearby from the Nagpur international airport and Nagpur Railway Station.\nYou will find all the necessities nearby as the metro station (Vaishnodevi Chowk metro) is 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like western washroom, water filter, gas stove, fridge, AC. Though the property is old we maintained it quite well.\n\nOther things to note\nSelf check-in with the lockbox. Furry friends welcome.`,
       amenities: [
         "Kitchen",
@@ -247,11 +291,60 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         isSuperhost: false
       },
       images: [
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80",
-        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80",
-        "https://images.unsplash.com/photo-1541542684-42a6b6a8d5b3?w=1200&q=80"
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauWObnvQHqZjBtNX051FwMkrcba4W6dTsmPyvH",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauUHmzs6Xq1k3gCSlvm6AcE9Ws8VKzwHanjMQ7",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaulKqfD4Ixn3QGgXRKtycZkP1ADldLIzNaBMWo",
+        "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauhbqkjAaKJDezqG3ZgdmRwBOk5t1y0sYAK8Ii"
+      ],
+      photoCategories: [
+        {
+          name: "Hall",
+          description: "Living room · Air conditioning · TV",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauhbqkjAaKJDezqG3ZgdmRwBOk5t1y0sYAK8Ii",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauDiMfpx1RFm5Zdr1RSILwCqahNpiV6Ak0tzsX",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauRriboWadtkBZlSTJAUimgwsEG2cx8XbVQMYa"
+          ]
+        },
+        {
+          name: "Bedroom",
+          description: "1 queen bed · Bed linen · Extra pillows and blankets · AC",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauWObnvQHqZjBtNX051FwMkrcba4W6dTsmPyvH",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauKXUdupBmbfL8APWjs1dCNh32Yavg5o70JV9O"
+          ]
+        },
+        {
+          name: "Full kitchen",
+          description: "Fridge · Gas cooker · Cooking basics · Dishes and cutlery",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauUHmzs6Xq1k3gCSlvm6AcE9Ws8VKzwHanjMQ7",
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauFZB9JqVE3sNnTaqlYIjwg01PkW4xvdoMFC2O"
+          ]
+        },
+        {
+          name: "Full bathroom",
+          description: "Shower · Hair dryer · Cleaning products · Shampoo",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UaulKqfD4Ixn3QGgXRKtycZkP1ADldLIzNaBMWo"
+          ]
+        },
+        {
+          name: "Dining area",
+          description: "Dining table · Chairs",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauFscAK7VE3sNnTaqlYIjwg01PkW4xvdoMFC2O"
+          ]
+        },
+        {
+          name: "Wardrobe",
+          description: "Storage space",
+          images: [
+            "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauYdnUupoWcSpPeXqk5IT9f8ngtyuRUE431l7i"
+          ]
+        }
       ],
       checkIn: "2:00 PM",
       checkOut: "11:00 AM",

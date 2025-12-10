@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
         hostname: "4qmsniikf1.ufs.sh"
       }
     ],
+    unoptimized: true,
   },
 };
 
