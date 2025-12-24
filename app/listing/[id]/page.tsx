@@ -13,6 +13,29 @@ interface PageProps {
   }>;
 }
 
+// Helper function to convert location URL to embed URL
+function getEmbedUrl(locationUrl: string, mapEmbedUrl?: string): string {
+  if (mapEmbedUrl) return mapEmbedUrl;
+  
+  // If it's a short URL (goo.gl), we need to use a fallback
+  // For production, you'd want to resolve the short URL or use coordinates
+  if (locationUrl.includes('goo.gl') || locationUrl.includes('maps.app.goo.gl')) {
+    // Default fallback for Nagpur location
+    return "https://maps.google.com/maps?q=21.1048757,79.0577373&z=17&output=embed";
+  }
+  
+  // If it's a full Google Maps URL, try to convert it to embed format
+  if (locationUrl.includes('google.com/maps')) {
+    const url = new URL(locationUrl);
+    const query = url.searchParams.get('q');
+    if (query) {
+      return `https://maps.google.com/maps?q=${encodeURIComponent(query)}&z=17&output=embed`;
+    }
+  }
+  
+  return locationUrl;
+}
+
 export default function ListingDetailPage({ params }: PageProps) {
   const [showAmenities, setShowAmenities] = useState(false);
   const [selectedAmenities, setSelectedAmenities] = useState([]);
@@ -468,7 +491,7 @@ export default function ListingDetailPage({ params }: PageProps) {
               <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-black">Where you'll be</h3>
               <div className="rounded-xl overflow-hidden h-[250px] sm:h-[350px] lg:h-[400px]">
                 <iframe
-                  src="https://maps.google.com/maps?q=21.1048757,79.0577373&z=17&output=embed"
+                  src={getEmbedUrl(listing.locationUrl, listing.mapEmbedUrl)}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

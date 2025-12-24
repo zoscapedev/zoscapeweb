@@ -42,7 +42,7 @@ export default function ListingCard({ listing }: ListingCardProps) {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 pt-3">
             <a
-              href="https://maps.app.goo.gl/9V7QqC2eJLc48H4v8?g_st=ipc"
+              href={listing.locationUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors"

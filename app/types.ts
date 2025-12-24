@@ -10,6 +10,7 @@ export interface Listing {
   reviews: number;
   image: string;
   location: string;
+  locationUrl: string;
 }
 
 export interface PhotoCategory {

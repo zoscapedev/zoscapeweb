@@ -12,7 +12,8 @@ export const listings: Listing[] = [
       rating: 4.67,
       reviews: 97,
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UautONXginQqFolOd3kEUNnLsTVb0CBt9pK25rv",
-      location: "Nagpur, India"
+      location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8"
     },
     {
       id: "203",
@@ -25,7 +26,8 @@ export const listings: Listing[] = [
       rating: 4.9,
       reviews: 30,
       image: "/203/hall/203_hall.jpg",
-      location: "Nagpur, India"
+      location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8"
     },
     {
       id: "509",
@@ -38,7 +40,8 @@ export const listings: Listing[] = [
       rating: 4.7,
       reviews: 83,
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
-      location: "Nagpur, India"
+      location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8"
     },
     {
       id: "306",
@@ -51,7 +54,8 @@ export const listings: Listing[] = [
       rating: 4.88,
       reviews: 82,
       image: "/306/hall/306_hall_1.jpeg",
-      location: "Nagpur, India"
+      location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8"
     },
     {
       id: "101",
@@ -64,7 +68,8 @@ export const listings: Listing[] = [
       rating: 4.5,
       reviews: 0,
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
-      location: "Nagpur, India"
+      location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/V5ggm5UMR5DA7yKSA"
     },
 ];
 
@@ -80,6 +85,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.7,
       reviews: 83,
       location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8",
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauXQvC7IlFm3b5ACYhf2UMxJlokwNicasu1SqF",
       description: `Welcome to Zoscape's entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, AC, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
@@ -177,6 +183,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.67,
       reviews: 97,
       location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8",
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauniTqv1DJYM2yUon847cpeRviFx9OHfZhKXSb",
       description: `Welcome to Zoscape's entire 1BHK Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup and a great balcony.\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
@@ -271,6 +278,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.5,
       reviews: 0,
       location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/V5ggm5UMR5DA7yKSA",
       image: "https://4qmsniikf1.ufs.sh/f/8jEDDmwe5UauxdPpJ9To7hD0mc4ZtuEkeHx9pbi1RI5OyYa3",
       description: `Welcome to 1BHK Private Studio Apartment in East Nagpur is located Nearby from the Nagpur international airport and Nagpur Railway Station.\nYou will find all the necessities nearby as the metro station (Vaishnodevi Chowk metro) is 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like western washroom, water filter, gas stove, fridge, AC. Though the property is old we maintained it quite well.\n\nOther things to note\nSelf check-in with the lockbox. Furry friends welcome.`,
       amenities: [
@@ -352,7 +360,6 @@ export const listingDetails: { [key: string]: ListingDetail } = {
         "Self check-in with the lockbox",
         "Furry friends welcome",
         "No parties",
-        "No smoking"
       ]
     },
     "306": {
@@ -366,6 +373,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.88,
       reviews: 82,
       location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8",
       image: "/306/hall/306_hall_1.jpeg",
       description: `Welcome to Zoscape's entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
@@ -453,8 +461,6 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       houseRules: [
         "All guests should be 18+",
         "Guest IDs required before check-in",
-        "No parties",
-        "No smoking"
       ]
     },
     "203": {
@@ -468,6 +474,7 @@ export const listingDetails: { [key: string]: ListingDetail } = {
       rating: 4.9,
       reviews: 30,
       location: "Nagpur, India",
+      locationUrl: "https://maps.app.goo.gl/9V7QqC2eJLc48H4v8",
       image: "/203/hall/203_hall(2).jpg",
       description: `Welcome to Zoscape's entire 1BHK Private Airport Apartment is located 1 Km from the Nagpur international airport.\nYou will find all the necessities nearby as the metro station (Jaiprakash Nagar metro) is under 1 Km. Situated in a central area of Nagpur. Very peaceful with all the amenities like lift, western washroom, water filter, gas stove, fridge, power backup for society\n\nOther things to note\nAll guests should be 18+\nWe will require all guest ids before checkin!`,
       amenities: [
